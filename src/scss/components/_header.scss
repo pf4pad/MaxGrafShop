@@ -1,1 +1,19 @@
-//
+.header{
+  position: fixed;
+  left:0;
+  top: 0;
+  width: 100%;
+}
+
+.header__left {
+  grid-column: 2 span;
+}
+
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 10 span;
+}
+
+
+
