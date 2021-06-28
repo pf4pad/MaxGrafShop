@@ -1,0 +1,17 @@
+.about{
+  overflow: hidden;
+  background-color: var(--color-eastbay);
+}
+
+.about__container {
+  display: flex;
+  position: relative;
+}
+.about__image{
+  flex-shrink: 0;
+    
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.about__image img{
+  object-fit: cover;
+ }

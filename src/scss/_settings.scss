@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
+  font-family: "Intro", sans-serif;
   background-color: var(--color-white);
 }
 
@@ -74,5 +74,72 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
+  
+}
 
+.btn{
+  padding: 22px 47px;
+  border-radius: 4px;
+  font: var(--middle-font-sm);
+  transition: color 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
+}
+.btn--primary {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  &:hover{
+  background-color: var(--color-accent-hover);
+  }
+}
+.btn--primary {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  font: var(--middle-regular);
+  &:hover {
+    background-color: var(--color-accent-hover);
+  }
+}
+
+.btn--secondary {
+  color: var(--color-white);
+  background-color: var(--color-main);
+  font: var(--middle-regular);
+  &:hover {
+    background-color: var(--color-main-hover);
+  }
+}
+
+.title{
+  margin: 0;
+  margin-bottom: var(--main-offset) ;
+  font: var(--middle-font-bold);
+  color: var(--color-main);
+
+}
+
+@import '_mixins.scss';
+.custom-checkbox{
+  @include custom-checkbox;
+  display: inline-flex;
+  align-items: center;
+}
+.custom-checkbox__content{
+  font: var(--middle-book);
+  color: var(--color-main);
+  padding-left: 35px;
+}
+.custom-checkbox__content::before{
+  top: -3px;
+  border-color: var(--color-cameo);
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.custom-checkbox__content::after{
+  top: -3px;
+  background-image: url('../img/chek.svg');
+  background-size: 15px 12px;
+  width: 24px;
+  height: 24px;
 }
