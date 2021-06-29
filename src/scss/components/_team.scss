@@ -1,0 +1,45 @@
+.team {
+  position: relative;
+  background-color: var(--color-eastbay);
+  padding: var(--big-offset) 0;
+}
+
+.team__figure{  
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+
+.team__title {
+  color: var(--color-white);
+}
+.team__img{
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: var(--second-offset);
+
+}
+.team__list {
+  position: relative;
+  gap: var(--main-offset) var(--second-offset);
+  z-index: 5;
+}
+
+.team__item {
+  grid-column: 4 span;
+}
+
+.team__subtitle {
+  display: block;
+  margin-bottom: var(--second-offset);
+  font: var(--prehigh-book);
+  color: var(--color-white);
+  
+}
+
+.team__post {
+  margin-bottom: var(--second-offset);
+  font: var(--middle-book);
+  color: var(--color-white);
+}

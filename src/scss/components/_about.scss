@@ -1,16 +1,79 @@
 .about{
+  position: relative;
   overflow: hidden;
   background-color: var(--color-eastbay);
+  height: 580px;
 }
 
 .about__container {
-  display: flex;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  
 }
+
+.about__figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .about__image{
   flex-shrink: 0;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 .about__image img{
   object-fit: cover;
- }
+}
+
+.about__text {
+  width: 34%;
+  transform: translateY(70px);
+}
+
+.about__title {
+  margin-bottom: var(--second-offset);
+  color: var(--color-white);
+}
+
+.about__descr {
+font: var(--middle-book);
+color: var(--color-white);
+}
+
+.about__quote {
+  display: inline-block;
+  margin-bottom: var(--second-offset);
+  font: inherit;
+}
+.about__quote::before,
+.about__quote::after{
+  display: none;
+}
+.about__author {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font: var(--prehigh-regular);
+  font-style: normal;
+  color: var(--color-white);
+  transform: translateX(50px);
+}
+
+.about__author::before {
+  display: inline-block;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-white);
+  margin-right: var(--second-offset);
+}
+
+.about__figure{
+  position: absolute;
+  top: 0;
+  left: 0;
+}

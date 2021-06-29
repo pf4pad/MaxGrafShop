@@ -1,0 +1,53 @@
+.contacts {
+  padding: var(--big-offset) 0;
+  background-color: #f3f6f6;
+}
+
+
+
+.contacts__title {
+  margin-bottom: var(--big-offset);
+}
+.contacts__item {
+  margin-bottom: var(--main-offset);
+  font-style: normal;
+}
+.contacts__subtitle {
+  margin: 0;
+  margin-bottom: var(--main-offset);
+  font: var(--small-book);
+  color: var(--color-grey);
+  text-transform: uppercase;
+
+}
+.tooltip {
+}
+.tooltip__btn {
+}
+
+.tooltip__txt {
+}
+
+.contact__phone {
+  display: inline-block;
+  margin-bottom: var(--big-offset);
+  font: var(--middle-high-bold);
+  color: var(--color-main);
+}
+.contacts__adress {
+  display: block;
+}
+.social {
+}
+.list-reset {
+}
+.social__item {
+}
+.social__link {
+}
+.social__link--vk {
+}
+.social__link--insta {
+}
+.contacts__map {
+}
